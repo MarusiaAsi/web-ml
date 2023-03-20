@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Простая форма</title>
+</head>
+<body>
+<form action="/" method="POST" enctype="multipart/form-data">
+    <h1>Загрузи изображение,чтобы распазнать что на нем</h1>
+    <p><input type=file name="f" style="color:transparent">
+    <p><img src=" {{ url_for('static', filename= path) }}" alt=""/>
+    <p><input type="submit" value="Узнать, что на изображении">
+    <h1>{{title}}</h1>
+    </p>
+</form>
+</body>
+</html>
